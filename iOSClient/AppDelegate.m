@@ -27,8 +27,7 @@
 #import "NCAutoUpload.h"
 #import "NCPushNotificationEncryption.h"
 #import <QuartzCore/QuartzCore.h>
-
-@import Sentry;
+@import Firebase;
 
 @class NCViewerRichdocument;
 
@@ -50,7 +49,7 @@
         NCBrandOptions.sharedInstance.disable_crash_service = false;
     }
     if (![CCUtility getDisableCrashservice] && NCBrandOptions.sharedInstance.disable_crash_service == false) {
-        
+        [FIRApp configure];
     }
     
     [CCUtility createDirectoryStandard];
