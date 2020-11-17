@@ -241,6 +241,7 @@
 //
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    // TEST
     @[][1];
     
     if (self.account.length == 0) { return; }
