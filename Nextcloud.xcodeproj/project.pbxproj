@@ -82,6 +82,7 @@
 		F7337DB62563B4AF0089012E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7337DB42563B4AF0089012E /* GoogleService-Info.plist */; };
 		F7337DB72563B4AF0089012E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7337DB42563B4AF0089012E /* GoogleService-Info.plist */; };
 		F7337DB82563B4AF0089012E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7337DB42563B4AF0089012E /* GoogleService-Info.plist */; };
+		F7337DBF2563B7770089012E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F7337DBE2563B7770089012E /* FirebaseCrashlytics */; };
 		F733B65221997CC2001C1FFA /* TLPhotoPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F733B65121997CC1001C1FFA /* TLPhotoPicker.framework */; };
 		F7362A1F220C853A005101B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7362A1E220C853A005101B5 /* LaunchScreen.storyboard */; };
 		F7381EE1218218C9000B1560 /* NCOffline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7381EDA218218C9000B1560 /* NCOffline.swift */; };
@@ -741,6 +742,7 @@
 				F74AFCE922E8B025003DE61F /* FSCalendar.framework in Frameworks */,
 				F7D2C773246470CA008513AE /* XLForm.framework in Frameworks */,
 				F782A57D25123694007BBABD /* RealmSwift in Frameworks */,
+				F7337DBF2563B7770089012E /* FirebaseCrashlytics in Frameworks */,
 				371B5A3323D0BD5500FAFAE9 /* FloatingPanel.framework in Frameworks */,
 				F70F2BA5225F2D8900EBB73E /* ZIPFoundation.framework in Frameworks */,
 			);
@@ -1639,6 +1641,7 @@
 				F782A57C25123694007BBABD /* RealmSwift */,
 				F786D58C253454BF00E3DD7B /* NCCommunication */,
 				F7C4D88C2534887E00C142DA /* Parchment */,
+				F7337DBE2563B7770089012E /* FirebaseCrashlytics */,
 			);
 			productName = "Crypto Cloud";
 			productReference = F7CE8AFA1DC1F8D8009CAE48 /* Nextcloud.app */;
@@ -1747,6 +1750,7 @@
 				F782A57925123694007BBABD /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				F786D58B253454BF00E3DD7B /* XCRemoteSwiftPackageReference "ios-communication-library" */,
 				F7C4D88B2534887E00C142DA /* XCRemoteSwiftPackageReference "Parchment" */,
+				F7337DBD2563B7770089012E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F7F67B9F1A24D27800EE80DA;
 			projectDirPath = "";
@@ -2758,6 +2762,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F7337DBD2563B7770089012E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
 		F782A57925123694007BBABD /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa";
@@ -2785,6 +2797,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F7337DBE2563B7770089012E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7337DBD2563B7770089012E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
 		F782A57A25123694007BBABD /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F782A57925123694007BBABD /* XCRemoteSwiftPackageReference "realm-cocoa" */;
