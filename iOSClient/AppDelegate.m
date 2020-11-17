@@ -241,9 +241,6 @@
 //
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // TEST
-    @[][1];
-    
     if (self.account.length == 0) { return; }
 
     [[NSNotificationCenter defaultCenter] postNotificationOnMainThreadName:k_notificationCenter_applicationDidEnterBackground object:nil];
